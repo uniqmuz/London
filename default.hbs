@@ -124,6 +124,12 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.10.0/tocbot.min.js"></script>
     <script>
+        $(document).ready(function () {
+            var hasTOC = $(".toc").children().length;
+            if (hasTOC) {
+                $(".post-full-content").addClass("post-full-content-with-toc");
+            }
+        });
         tocbot.init({
             tocSelector: '.toc',
             contentSelector: '.post-content',

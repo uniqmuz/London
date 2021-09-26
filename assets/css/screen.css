@@ -511,7 +511,7 @@ body {
 
 .post-content {
     max-width: 720px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 6vw 0;
 }
 
@@ -766,9 +766,9 @@ figure.kg-width-full img {
 body {
     overflow: visible;
 }
-.post-full-content {
+.post-full-content-with-toc {
     display: grid;
-    grid-template-columns: 1fr 0.2fr;
+    grid-template-columns: 0.2fr auto 0.2fr;
     padding: 0 0 6vw;
     margin: 0;
 }
@@ -790,4 +790,9 @@ body {
 }
 ol.toc-list {
     margin: 0;
+}
+
+/*side bar*/
+.sidebar-container{
+    order: -1;
 }

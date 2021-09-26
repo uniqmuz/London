@@ -2,10 +2,16 @@
 
 {{#post}}
 <section class="post-full-content">
+     {{!-- Membership code --}}
+    {{!-- {{#if access}} --}}
+    <aside class="sidebar-container">
+        <div class="sidebar"></div>
+    </aside>
     <aside class="toc-container">
         <div class="toc"></div>
     </aside>
-    <div class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+    {{!-- {{/if}} --}}
+    <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
         <header class="post-content-header">
             <h1 class="post-content-title">{{title}}</h1>
@@ -54,6 +60,7 @@
         --}}
 
     </div>
+    </article>
 </section>
 {{/post}}
 
